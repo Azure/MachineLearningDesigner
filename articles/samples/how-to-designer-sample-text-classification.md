@@ -1,16 +1,3 @@
----
-title: 'Designer: classify book reviews example'
-titleSuffix: Azure Machine Learning
-description: Build a multiclass logistic regression classifier to predict the company category with wikipedia SP 500 dataset using Azure Machine Learning designer.
-services: machine-learning
-ms.service: machine-learning
-ms.subservice: core
-ms.topic: sample
-author: likebupt
-ms.author: keli19
-ms.reviewer: peterlu
-ms.date: 02/11/2020
----
 # Build a classifier to predict company category using Azure Machine Learning designer.
 
 **Designer (preview) sample 7**

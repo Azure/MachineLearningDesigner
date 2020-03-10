@@ -1,16 +1,3 @@
----
-title: 'Designer: Predict flight delay example' 
-titleSuffix: Azure Machine Learning
-description: Build a classifier and use custom R code to predict flight delays with Azure Machine Learning designer.
-services: machine-learning
-ms.service: machine-learning
-ms.subservice: core
-ms.topic: sample
-author: likebupt
-ms.author: keli19
-ms.reviewer: peterlu
-ms.date: 12/25/2019
----
 # Build a classifier & use R to predict flight delays with Azure Machine Learning designer
 
 **Designer (preview) sample 6**

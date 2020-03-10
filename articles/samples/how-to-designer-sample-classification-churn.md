@@ -1,17 +1,3 @@
----
-title: 'Designer: Predict churn example'
-titleSuffix: Azure Machine Learning
-description: Follow this classification example to predict churn with Azure Machine Learning designer & boosted decision trees. 
-services: machine-learning
-ms.service: machine-learning
-ms.subservice: core
-ms.topic: sample
-author: likebupt
-ms.author: keli19
-ms.reviewer: sgilley
-ms.date: 12/25/2019
----
-
 # Use boosted decision tree to predict churn with Azure Machine Learning designer
 
 **Designer (preview) sample 5**

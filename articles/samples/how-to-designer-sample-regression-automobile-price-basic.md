@@ -1,16 +1,3 @@
----
-title: 'Designer: Predict car prices (basic) example'
-titleSuffix: Azure Machine Learning
-description: Build an ML regression model to predict an automobile's price without writing a single line of code with Azure Machine Learning designer.
-services: machine-learning
-ms.service: machine-learning
-ms.subservice: core
-ms.topic: sample
-author: likebupt
-ms.author: keli19
-ms.reviewer: peterlu
-ms.date: 02/11/2020
----
 # Use regression to predict car prices with Azure Machine Learning designer
 
 **Designer (preview) sample 1**

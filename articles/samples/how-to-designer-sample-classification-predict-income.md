@@ -1,16 +1,3 @@
----
-title: 'Designer: Classify, predict income example'
-titleSuffix: Azure Machine Learning
-description: Follow this example build a no-code classifier to predict income with Azure Machine Learning designer.
-services: machine-learning
-ms.service: machine-learning
-ms.subservice: core
-ms.topic: sample
-author: likebupt
-ms.author: keli19
-ms.reviewer: peterlu
-ms.date: 02/22/2020
----
 # Build a classifier & use feature selection to predict income with Azure Machine Learning designer
 
 **Designer (preview) sample 3**

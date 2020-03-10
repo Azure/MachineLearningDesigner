@@ -1,16 +1,3 @@
----
-title: 'Designer: Predict car prices (advanced) example'
-titleSuffix: Azure Machine Learning
-description: Build & compare multiple ML regression models to predict an automobile's price  based on technical features with Azure Machine Learning designer.
-services: machine-learning
-ms.service: machine-learning
-ms.subservice: core
-ms.topic: sample
-author: likebupt
-ms.author: keli19
-ms.reviewer: peterlu
-ms.date: 12/25/2019
----
 # Train & compare multiple regression models to predict car prices with Azure Machine Learning designer
 
 **Designer (preview) sample 2**
