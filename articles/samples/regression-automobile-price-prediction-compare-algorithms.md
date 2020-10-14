@@ -5,11 +5,11 @@
 
 Learn how to build a  machine learning pipeline without writing a single line of code using the designer. This sample trains and compares multiple regression models to predict a car's price based on its technical features. We'll provide the rationale for the choices made in this pipeline so you can tackle your own machine learning problems.
 
-If you're just getting started with machine learning, take a look at the [basic version](how-to-designer-sample-regression-automobile-price-basic.md) of this pipeline.
+If you're just getting started with machine learning, take a look at the [basic version](regression-automobile-price-prediction-basic.md) of this pipeline.
 
 Here's the completed graph for this pipeline:
 
-[![Graph of the pipeline](./media/how-to-designer-sample-regression-automobile-price-compare-algorithms/graph.png)](./media/how-to-designer-sample-regression-automobile-price-compare-algorithms/graph.png#lightbox)
+[![Graph of the pipeline](./media/regression-automobile-price-prediction-compare-algorithms/graph.png)](./media/regression-automobile-price-prediction-compare-algorithms/graph.png#lightbox)
 
 
 ## Pipeline summary
@@ -31,7 +31,7 @@ The main data preparation tasks include data cleaning, integration, transformati
 
 Use the **Select Columns in Dataset** module to exclude normalized-losses that have many missing values. We then use **Clean Missing Data** to remove the rows that have missing values. This helps to create a clean set of training data.
 
-![Data pre-processing](./media/how-to-designer-sample-regression-automobile-price-compare-algorithms/data-processing.png)
+![Data pre-processing](./media/regression-automobile-price-prediction-compare-algorithms/data-processing.png)
 
 ## Train the model
 
@@ -53,7 +53,7 @@ After the model is trained, use the **Score Model** and **Evaluate Model** modul
 
 Here are the results:
 
-![Compare the results](./media/how-to-designer-sample-regression-automobile-price-compare-algorithms/result.png)
+![Compare the results](./media/regression-automobile-price-prediction-compare-algorithms/result.png)
 
 These results show that the model built with **Boosted Decision Tree Regression** has a lower root mean squared error than the model built on **Decision Forest Regression**.
 
@@ -62,9 +62,9 @@ These results show that the model built with **Boosted Decision Tree Regression*
 
 Explore the other samples available for the designer:
 
-- [Sample 1 - Regression: Predict an automobile's price](how-to-designer-sample-regression-automobile-price-basic.md)
-- [Sample 3 - Classification with feature selection: Income Prediction](how-to-designer-sample-classification-predict-income.md)
-- [Sample 4 - Classification: Predict credit risk (cost sensitive)](how-to-designer-sample-classification-credit-risk-cost-sensitive.md)
-- [Sample 5 - Classification: Predict churn](how-to-designer-sample-classification-churn.md)
-- [Sample 6 - Classification: Predict flight delays](how-to-designer-sample-classification-flight-delay.md)
-- [Sample 7 - Text Classification: Wikipedia SP 500 Dataset](how-to-designer-sample-text-classification.md)
+- [Sample 1 - Regression: Predict an automobile's price](regression-automobile-price-prediction-basic.md)
+- [Sample 3 - Classification with feature selection: Income Prediction](binary-classification-feature-selection-income-prediction.md)
+- [Sample 4 - Classification: Predict credit risk (cost sensitive)](binary-classification-python-credit-prediction.md)
+- [Sample 5 - Classification: Predict churn](binary-classification-customer-relationship-prediction.md)
+- [Sample 6 - Classification: Predict flight delays](r-script-flight-delay-prediction.md)
+- [Sample 7 - Text Classification: Wikipedia SP 500 Dataset](text-classification-wiki.md)

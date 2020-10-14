@@ -11,7 +11,7 @@ Because you're trying to answer the question "Which one?" this is called a class
 
 Here's the completed graph for this pipeline:
 
-![Pipeline graph](./media/how-to-designer-sample-classification-churn/pipeline-graph.png)
+![Pipeline graph](./media/binary-classification-customer-relationship-prediction/pipeline-graph.png)
 
 
 ## Data
@@ -26,11 +26,11 @@ First, some simple data processing.
 
 - The raw dataset has many missing values. Use the **Clean Missing Data** module to replace the missing values with 0.
 
-    ![Clean the dataset](media/how-to-designer-sample-classification-churn/sample5-dataset-1225.png)
+    ![Clean the dataset](media/binary-classification-customer-relationship-prediction/sample5-dataset-1225.png)
 
 - The features and the corresponding churn are in different datasets. Use the **Add Columns** module to append the label columns to the feature columns. The first column, **Col1**, is the label column. From the visualization result we can see the dataset is unbalanced. There way more negative (-1) examples than positive examples (+1). We will use **SMOTE** module to increase underrepresented cases later.
 
-    ![Add the column dataset](./media/how-to-designer-sample-classification-churn/sample5-addcol-1225.png)
+    ![Add the column dataset](./media/binary-classification-customer-relationship-prediction/sample5-addcol-1225.png)
 
 
 
@@ -44,7 +44,7 @@ First, some simple data processing.
 
 Visualize the output of the **Evaluate Model** module to see the performance of the model on the test set. 
 
-![Evaluate the results](./media/how-to-designer-sample-classification-churn/sample5-evaluate-1225.png)
+![Evaluate the results](./media/binary-classification-customer-relationship-prediction/sample5-evaluate-1225.png)
 
  You can move the **Threshold** slider and see the metrics change for the binary classification task. 
 
@@ -53,9 +53,9 @@ Visualize the output of the **Evaluate Model** module to see the performance of 
 
 Explore the other samples available for the designer:
 
-- [Sample 1 - Regression: Predict an automobile's price](how-to-designer-sample-regression-automobile-price-basic.md)
-- [Sample 2 - Regression: Compare algorithms for automobile price prediction](how-to-designer-sample-regression-automobile-price-compare-algorithms.md)
-- [Sample 3 - Classification with feature selection: Income Prediction](how-to-designer-sample-classification-predict-income.md)
-- [Sample 4 - Classification: Predict credit risk (cost sensitive)](how-to-designer-sample-classification-credit-risk-cost-sensitive.md)
-- [Sample 6 - Classification: Predict flight delays](how-to-designer-sample-classification-flight-delay.md)
-- [Sample 7 - Text Classification: Wikipedia SP 500 Dataset](how-to-designer-sample-text-classification.md)
+- [Sample 1 - Regression: Predict an automobile's price](regression-automobile-price-prediction-basic.md)
+- [Sample 2 - Regression: Compare algorithms for automobile price prediction](regression-automobile-price-prediction-compare-algorithms.md)
+- [Sample 3 - Classification with feature selection: Income Prediction](binary-classification-feature-selection-income-prediction.md)
+- [Sample 4 - Classification: Predict credit risk (cost sensitive)](binary-classification-python-credit-prediction.md)
+- [Sample 6 - Classification: Predict flight delays](r-script-flight-delay-prediction.md)
+- [Sample 7 - Text Classification: Wikipedia SP 500 Dataset](text-classification-wiki.md)

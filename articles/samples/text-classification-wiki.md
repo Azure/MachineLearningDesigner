@@ -27,7 +27,7 @@ The fundamental steps of a training machine learning model with text data are:
 
 Here's the final, completed graph of the pipeline we'll be working on. We'll provide the rationale for all the modules so you can make similar decisions on your own.
 
-[![Graph of the pipeline](./media/how-to-designer-sample-text-classification/nlp-modules-overall.png)](./media/how-to-designer-sample-text-classification/nlp-modules-overall.png#lightbox)
+[![Graph of the pipeline](./media/text-classification-wiki/nlp-modules-overall.png)](./media/text-classification-wiki/nlp-modules-overall.png#lightbox)
 
 ## Data
 
@@ -78,7 +78,7 @@ After the model is trained, we would use the **Score Model** and **Evaluate Mode
 For **Feature Hashing** module, it is easy to perform feature engineer on scoring flow as training flow. Use **Feature Hashing** module directly to process the input text data.
 
 For **Extract N-Gram Feature from Text** module, we would connect the **Result Vocabulary output** from the training dataflow to the **Input Vocabulary** on the scoring dataflow, and set the **Vocabulary mode** parameter to **ReadOnly**.
-[![Graph of n-gram score](./media/how-to-designer-sample-text-classification/n-gram.png)](./media/how-to-designer-sample-text-classification/n-gram.png)
+[![Graph of n-gram score](./media/text-classification-wikin/n-gram.png)](./media/text-classification-wiki/n-gram.png)
 
 After finishing the engineering step, **Score Model** could be used to generate predictions for the test dataset by using the trained model. To check the result, select the output port of **Score Model** and then select **Visualize**.
 
@@ -89,9 +89,10 @@ To check the result, select the output port of the **Evaluate Model** and then s
 ## Next steps
 
 Explore the other samples available for the designer:
-- [Sample 1 - Regression: Predict an automobile's price](how-to-designer-sample-regression-automobile-price-basic.md)
-- [Sample 2 - Regression: Compare algorithms for automobile price prediction](how-to-designer-sample-regression-automobile-price-compare-algorithms.md)
-- [Sample 3 - Classification with feature selection: Income Prediction](how-to-designer-sample-classification-predict-income.md)
-- [Sample 4 - Classification: Predict credit risk (cost sensitive)](how-to-designer-sample-classification-credit-risk-cost-sensitive.md)
-- [Sample 5 - Classification: Predict churn](how-to-designer-sample-classification-churn.md)
-- [Sample 6 - Classification: Predict flight delays](how-to-designer-sample-classification-flight-delay.md)
+
+- [Sample 1 - Regression: Predict an automobile's price](regression-automobile-price-prediction-basic.md)
+- [Sample 2 - Regression: Compare algorithms for automobile price prediction](regression-automobile-price-prediction-compare-algorithms.md)
+- [Sample 3 - Classification with feature selection: Income Prediction](binary-classification-feature-selection-income-prediction.md)
+- [Sample 4 - Classification: Predict credit risk (cost sensitive)](binary-classification-python-credit-prediction.md)
+- [Sample 5 - Classification: Predict churn](binary-classification-customer-relationship-prediction.md)
+- [Sample 6 - Classification: Predict flight delays](r-script-flight-delay-prediction.md)

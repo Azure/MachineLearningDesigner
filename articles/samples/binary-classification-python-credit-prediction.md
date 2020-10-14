@@ -8,7 +8,7 @@ This sample trains a classifier to predict credit risk using credit application 
 
 Here's the completed graph for this pipeline:
 
-[![Graph of the pipeline](./media/how-to-designer-sample-classification-credit-risk-cost-sensitive/graph.png)](./media/how-to-designer-sample-classification-credit-risk-cost-sensitive/graph.png#lightbox)
+[![Graph of the pipeline](./media/binary-classification-python-credit-prediction/graph.png)](./media/binary-classification-python-credit-prediction/graph.png#lightbox)
 
 
 ## Data
@@ -28,7 +28,7 @@ The cost of misclassifying a low-risk example as high is 1, and the cost of misc
 
 Here's the graph of the pipeline:
 
-[![Graph of the pipeline](./media/how-to-designer-sample-classification-credit-risk-cost-sensitive/graph.png)](./media/how-to-designer-sample-classification-credit-risk-cost-sensitive/graph.png#lightbox)
+[![Graph of the pipeline](./media/binary-classification-python-credit-prediction/graph.png)](./media/binary-classification-python-credit-prediction/graph.png#lightbox)
 
 ## Data processing
 
@@ -84,7 +84,7 @@ This sample uses the standard data science workflow to create, train, and test t
 
 The following diagram shows a portion of this pipeline, in which the original and replicated training sets are used to train two different SVM models. **Train Model** is connected to the training set, and **Score Model** is connected to the test set.
 
-![Pipeline graph](./media/how-to-designer-sample-classification-credit-risk-cost-sensitive/score-part.png)
+![Pipeline graph](./media/binary-classification-python-credit-prediction/score-part.png)
 
 In the evaluation stage of the pipeline, you compute the accuracy of each of the four models. For this pipeline, use **Evaluate Model** to compare examples that have the same misclassification cost.
 
@@ -118,7 +118,7 @@ def azureml_main(dataframe1 = None, dataframe2 = None):
 
 To view the results of the pipeline, you can right-click the Visualize output of the last **Select Columns in Dataset** module.
 
-![Visualize output](media/how-to-designer-sample-classification-credit-risk-cost-sensitive/sample4-lastselect-1225.png)
+![Visualize output](media/binary-classification-python-credit-prediction/sample4-lastselect-1225.png)
 
 The first column lists the machine learning algorithm used to generate the model.
 
@@ -133,9 +133,9 @@ From these results, you can see that the best accuracy is provided by the model 
 
 Explore the other samples available for the designer:
 
-- [Sample 1 - Regression: Predict an automobile's price](how-to-designer-sample-regression-automobile-price-basic.md)
-- [Sample 2 - Regression: Compare algorithms for automobile price prediction](how-to-designer-sample-regression-automobile-price-compare-algorithms.md)
-- [Sample 3 - Classification with feature selection: Income Prediction](how-to-designer-sample-classification-predict-income.md)
-- [Sample 5 - Classification: Predict churn](how-to-designer-sample-classification-churn.md)
-- [Sample 6 - Classification: Predict flight delays](how-to-designer-sample-classification-flight-delay.md)
-- [Sample 7 - Text Classification: Wikipedia SP 500 Dataset](how-to-designer-sample-text-classification.md)
+- [Sample 1 - Regression: Predict an automobile's price](regression-automobile-price-prediction-basic.md)
+- [Sample 2 - Regression: Compare algorithms for automobile price prediction](regression-automobile-price-prediction-compare-algorithms.md)
+- [Sample 3 - Classification with feature selection: Income Prediction](binary-classification-feature-selection-income-prediction.md)
+- [Sample 5 - Classification: Predict churn](binary-classification-customer-relationship-prediction.md)
+- [Sample 6 - Classification: Predict flight delays](r-script-flight-delay-prediction.md)
+- [Sample 7 - Text Classification: Wikipedia SP 500 Dataset](text-classification-wiki.md)

@@ -9,13 +9,13 @@ Because the question is answering "Which one?", this is called a classification 
 
 Here's the final pipeline graph for this sample:
 
-![Graph of the pipeline](./media/how-to-designer-sample-classification-predict-income/overall-graph.png)
+![Graph of the pipeline](./media/binary-classification-feature-selection-income-prediction/overall-graph.png)
 
 
 ## Data
 
 The dataset contains 14 features and one label column. There are multiple types of features, including numerical and categorical. The following diagram shows an excerpt from the dataset:
-![data](media/how-to-designer-sample-classification-predict-income/sample3-dataset-1225.png)
+![data](media/binary-classification-feature-selection-income-prediction/sample3-dataset-1225.png)
 
 
 
@@ -29,7 +29,7 @@ Follow these steps to create the pipeline:
 1. Add a **Two-Class Boosted Decision Tree** module to initialize a boosted decision tree classifier.
 1. Add a **Train Model** module. Connect the classifier from the previous step to the left input port of the **Train Model**. Connect the filtered dataset from Filter Based Feature Selection module as training dataset.  The **Train Model** will train the classifier.
 1. Add Select Columns Transformation and Apply Transformation module to apply the same transformation (filtered based feature selection) to test dataset.
-![apply-transformation](./media/how-to-designer-sample-classification-predict-income/transformation.png)
+![apply-transformation](./media/binary-classification-feature-selection-income-prediction/transformation.png)
 1. Add **Score Model** module and connect the **Train Model** module to it. Then add the test set (the output of Apply Transformation module which apply feature selection to test set too) to the **Score Model**. The **Score Model** will make the predictions. You can select its output port to see the predictions and the positive class probabilities.
 
 
@@ -39,7 +39,7 @@ Follow these steps to create the pipeline:
 
 ## Results
 
-![Evaluate the results](media/how-to-designer-sample-classification-predict-income/sample3-evaluate-1225.png)
+![Evaluate the results](media/binary-classification-feature-selection-income-prediction/sample3-evaluate-1225.png)
 
 In the evaluation results, you can see that the curves like ROC, Precision-recall and confusion metrics. 
 
@@ -51,9 +51,9 @@ In the evaluation results, you can see that the curves like ROC, Precision-recal
 
 Explore the other samples available for the designer:
 
-- [Sample 1 - Regression: Predict an automobile's price](how-to-designer-sample-regression-automobile-price-basic.md)
-- [Sample 2 - Regression: Compare algorithms for automobile price prediction](how-to-designer-sample-regression-automobile-price-compare-algorithms.md)
-- [Sample 4 - Classification: Predict credit risk (cost sensitive)](how-to-designer-sample-classification-credit-risk-cost-sensitive.md)
-- [Sample 5 - Classification: Predict churn](how-to-designer-sample-classification-churn.md)
-- [Sample 6 - Classification: Predict flight delays](how-to-designer-sample-classification-flight-delay.md)
-- [Sample 7 - Text Classification: Wikipedia SP 500 Dataset](how-to-designer-sample-text-classification.md)
+- [Sample 1 - Regression: Predict an automobile's price](regression-automobile-price-prediction-basic.md)
+- [Sample 2 - Regression: Compare algorithms for automobile price prediction](regression-automobile-price-prediction-compare-algorithms.md)
+- [Sample 4 - Classification: Predict credit risk (cost sensitive)](binary-classification-python-credit-prediction.md)
+- [Sample 5 - Classification: Predict churn](binary-classification-customer-relationship-prediction.md)
+- [Sample 6 - Classification: Predict flight delays](r-script-flight-delay-prediction.md)
+- [Sample 7 - Text Classification: Wikipedia SP 500 Dataset](text-classification-wiki.md)
