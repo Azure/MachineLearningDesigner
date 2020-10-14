@@ -1,8 +1,7 @@
 # Use regression to predict car prices with Azure Machine Learning designer
 
 **Designer sample 1**
-
-
+=
 Learn how to build a machine learning regression model without writing a single line of code using the designer.
 
 This pipeline trains a **linear regressor** to predict a car's price based on technical features such as make, model, horsepower, and size. Because you're trying to answer the question "How much?" this is called a regression problem. However, you can apply the same fundamental steps in this example to tackle any type of machine learning problem whether it be regression, classification, clustering, and so on.
@@ -16,7 +15,7 @@ The fundamental steps of a training machine learning model are:
 
 Here's the final, completed graph of the pipeline. This article provides the rationale for all the modules so you can make similar decisions on your own.
 
-![Graph of the pipeline](./media/how-to-designer-sample-regression-automobile-price-basic/overall-graph.png)
+![Graph of the pipeline](./media/regression-automobile-price-prediction-basic/overall-graph.png)
 
 ## Prerequisites
 
@@ -35,7 +34,7 @@ The main data preparation tasks include data cleaning, integration, transformati
 
 Use the **Select Columns in Dataset** module to exclude normalized-losses that have many missing values. Then use **Clean Missing Data** to remove the rows that have missing values. This helps to create a clean set of training data.
 
-![Data pre-processing](./media/how-to-designer-sample-regression-automobile-price-basic/data-processing.png)
+![Data pre-processing](./media/regression-automobile-price-prediction-basic/data-processing.png)
 
 ## Train the model
 
@@ -51,13 +50,13 @@ Split the dataset and use different datasets to train and test the model to make
 
 After the model is trained, you can use the **Score Model** and **Evaluate Model** modules to generate predicted results and evaluate the models.
 
-**Score Model** generates predictions for the test dataset by using the trained model. To check the result, select the output port of **Score Model** and then select **Visualize**.
+**Score Model** generates predictions for the test dataset by using the trained model. To check the result, right-click the output port of **Score Model** and then select **Visualize**.
 
-![Score result](./media/how-to-designer-sample-regression-automobile-price-basic/sample1-score-1225.png)
+![Score result](./media/regression-automobile-price-prediction-basic/scored-label.png)
 
-Pass the scores to the **Evaluate Model** module to generate evaluation metrics. To check the result, select the output port of the **Evaluate Model** and then select **Visualize**.
+Pass the scores to the **Evaluate Model** module to generate evaluation metrics. To check the result, right-click the output port of the **Evaluate Model** and then select **Visualize**.
 
-![Evaluate result](./media/how-to-designer-sample-regression-automobile-price-basic/sample1-evaluate-1225.png)
+![Evaluate result](./media/regression-automobile-price-prediction-basic/evaluate-model-output.png)
 
 
 ## Next steps
