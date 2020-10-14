@@ -90,7 +90,7 @@ Finally, to test the quality of the results, add the **Evaluate Model** module t
 ## Evaluate
 The logistic regression model has AUC of 0.631 on the test set.
 
- ![evaluate](media/r-script-flight-delay-prediction/sample6-evaluate-1225.png)
+ ![evaluate](media/r-script-flight-delay-prediction/evaluate.png)
 
 ## Next steps
 
