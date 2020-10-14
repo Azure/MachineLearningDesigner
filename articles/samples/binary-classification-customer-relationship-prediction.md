@@ -26,13 +26,11 @@ First, some simple data processing.
 
 - The raw dataset has many missing values. Use the **Clean Missing Data** module to replace the missing values with 0.
 
-    ![Clean the dataset](media/binary-classification-customer-relationship-prediction/sample5-dataset-1225.png)
+    ![Clean the dataset](media/binary-classification-customer-relationship-prediction/dataset.png)
 
 - The features and the corresponding churn are in different datasets. Use the **Add Columns** module to append the label columns to the feature columns. The first column, **Col1**, is the label column. From the visualization result we can see the dataset is unbalanced. There way more negative (-1) examples than positive examples (+1). We will use **SMOTE** module to increase underrepresented cases later.
 
-    ![Add the column dataset](./media/binary-classification-customer-relationship-prediction/sample5-addcol-1225.png)
-
-
+    ![Add the column dataset](./media/binary-classification-customer-relationship-prediction/add-column.png)
 
 - Use the **Split Data** module to split the dataset into train and test sets.
 
@@ -44,7 +42,7 @@ First, some simple data processing.
 
 Visualize the output of the **Evaluate Model** module to see the performance of the model on the test set. 
 
-![Evaluate the results](./media/binary-classification-customer-relationship-prediction/sample5-evaluate-1225.png)
+![Evaluate the results](./media/binary-classification-customer-relationship-prediction/evaluate-result.png)
 
  You can move the **Threshold** slider and see the metrics change for the binary classification task. 
 
