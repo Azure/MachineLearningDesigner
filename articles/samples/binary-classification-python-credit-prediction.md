@@ -26,10 +26,6 @@ With both approaches, you evaluate the models by using the test dataset with rep
 
 The cost of misclassifying a low-risk example as high is 1, and the cost of misclassifying a high-risk example as low is 5. We use an **Execute Python Script** module to account for this misclassification cost.
 
-Here's the graph of the pipeline:
-
-[![Graph of the pipeline](./media/binary-classification-python-credit-prediction/graph.png)](./media/binary-classification-python-credit-prediction/graph.png#lightbox)
-
 ## Data processing
 
 Start by using the **Metadata Editor** module to add column names to replace the default column names with more meaningful names, obtained from the dataset description on the UCI site. Provide the new column names as comma-separated values in the **New column** name field of the **Metadata Editor**.
@@ -118,7 +114,7 @@ def azureml_main(dataframe1 = None, dataframe2 = None):
 
 To view the results of the pipeline, you can right-click the Visualize output of the last **Select Columns in Dataset** module.
 
-![Visualize output](media/binary-classification-python-credit-prediction/sample4-lastselect-1225.png)
+![Visualize output](media/binary-classification-python-credit-prediction/visualize-output.png)
 
 The first column lists the machine learning algorithm used to generate the model.
 
