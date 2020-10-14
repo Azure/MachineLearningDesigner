@@ -1,9 +1,9 @@
 # Build a classifier to predict company category using Azure Machine Learning designer.
 
-**Designer (preview) sample 7**
+**Designer sample 7**
 
 
-This sample demonstrates how to use text analytics modules to build a text classification pipeline in Azure Machine Learning designer (preview).
+This sample demonstrates how to use text analytics modules to build a text classification pipeline in Azure Machine Learning designer.
 
 The goal of text classification is to assign some piece of text to one or more predefined classes or categories. The piece of text could be a document, news article, search query, email, tweet, support tickets, customer feedback, user product review etc. Applications of text classification include categorizing newspaper articles and news wire contents into topics, organizing web pages into hierarchical categories, filtering spam email, sentiment analysis, predicting user intent from search queries, routing support tickets, and analyzing customer feedback. 
 

@@ -1,6 +1,6 @@
 # Build a classifier & use R to predict flight delays with Azure Machine Learning designer
 
-**Designer (preview) sample 6**
+**Designer sample 6**
 
 
 This pipeline uses historical flight and weather data to predict if a scheduled passenger flight will be delayed by more than 15 minutes. This problem can be approached as a classification problem, predicting two classes: delayed, or on time.

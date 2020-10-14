@@ -1,9 +1,9 @@
 # Use boosted decision tree to predict churn with Azure Machine Learning designer
 
-**Designer (preview) sample 5**
+**Designer sample 5**
 
 
-Learn how to build a complex machine learning pipeline without writing a single line of code using the designer (preview).
+Learn how to build a complex machine learning pipeline without writing a single line of code using the designer.
 
 This pipeline trains 2 **two-class boosted decision tree** classifiers to predict common tasks for customer relationship management (CRM) systems - customer churn. The data values and labels are split across multiple data sources and scrambled to anonymize customer information, however, we can still use the designer to combine data sets and train a model using the obscured values.
 
