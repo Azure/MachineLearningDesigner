@@ -29,7 +29,6 @@ Follow these steps to create the pipeline:
 1. Add a **Two-Class Boosted Decision Tree** module to initialize a boosted decision tree classifier.
 1. Add a **Train Model** module. Connect the classifier from the previous step to the left input port of the **Train Model**. Connect the filtered dataset from Filter Based Feature Selection module as training dataset.  The **Train Model** will train the classifier.
 1. Add Select Columns Transformation and Apply Transformation module to apply the same transformation (filtered based feature selection) to test dataset.
-![apply-transformation](./media/binary-classification-feature-selection-income-prediction/transformation.png)
 1. Add **Score Model** module and connect the **Train Model** module to it. Then add the test set (the output of Apply Transformation module which apply feature selection to test set too) to the **Score Model**. The **Score Model** will make the predictions. You can select its output port to see the predictions and the positive class probabilities.
 
 
