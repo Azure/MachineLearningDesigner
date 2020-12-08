@@ -85,6 +85,17 @@ After finishing the engineering step, **Score Model** could be used to generate 
 We then pass the scores to the **Evaluate Model** module to generate evaluation metrics. **Evaluate Model** has two input ports, so that we could evaluate and compare scored datasets that are generated with different methods. In this sample, we compare the performance of the result generated with feature hashing method and n-gram method.
 To check the result, select the output port of the **Evaluate Model** and then select **Visualize**.
 
+### Build inference pipeline to deploy a real-time endpoint
+
+After submitting the training pipeline above successfully, you can register the output of the circled module as dataset.
+
+:::image type="content" source="./media/text-classification-wiki/extract-n-gram-output-voc-register-dataset.png" alt-text="register dataset" border="true":::
+
+Then you can create real-time inference pipeline. After creating inference pipeline, you need to adjust your inference pipeline manually like following:
+
+:::image type="content" source="./media/text-classification-wiki/extract-n-gram-inference-pipeline.png" alt-text="inference pipeline" border="true":::
+
+Then submit the inference pipeline, and deploy a real-time endpoint.
 
 ## Next steps
 
