@@ -17,12 +17,6 @@ Here's the final, completed graph of the pipeline. This article provides the rat
 
 ![Graph of the pipeline](./media/regression-automobile-price-prediction-basic/overall-graph.png)
 
-## Prerequisites
-
-[!INCLUDE [aml-ui-prereq](../../includes/aml-ui-prereq.md)]
-
-4. Click the sample 1 to open it。
-
 
 ## Get the data
 
