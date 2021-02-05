@@ -25,7 +25,7 @@ Follow these steps to create the pipeline:
 
 1. Drag the Adult Census Income Binary dataset module into the pipeline canvas.
 1. Add a **Split Data** module to create the training and test sets. Set the fraction of rows in the first output dataset to 0.7. This setting specifies that 70% of the data will be output to the left port of the module and the rest to the right port. We use the left dataset for training and the right one for testing.
-1. Add the **Filter Based Feature Selection** module to select 5 features by PearsonCorrelation. 
+1. Add the **Filter Based Feature Selection** module to select 5 features by ChiSquared. 
 1. Add a **Two-Class Boosted Decision Tree** module to initialize a boosted decision tree classifier.
 1. Add a **Train Model** module. Connect the classifier from the previous step to the left input port of the **Train Model**. Connect the filtered dataset from Filter Based Feature Selection module as training dataset.  The **Train Model** will train the classifier.
 1. Add Select Columns Transformation and Apply Transformation module to apply the same transformation (filtered based feature selection) to test dataset.
