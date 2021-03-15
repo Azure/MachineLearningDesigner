@@ -89,9 +89,13 @@ To check the result, select the output port of the **Evaluate Model** and then s
 
 After submitting the training pipeline above successfully, you can register the output of the circled module as dataset.
 
-![register dataset of output vocabulary](./media/text-classification-wiki/extract-n-gram-output-voc-register-dataset.png)
+![register dataset of output vocabulary1](./media/text-classification-wiki/extract-n-gram-training-pipeline-score-model.png)
 
-Then you can create real-time inference pipeline. After creating inference pipeline, you need to adjust your inference pipeline manually like following:
+To register dataset, you need to select **Extract N-Gram Feature from Text** module and switch to **Outputs+logs** tab in the right pane. Click on **Register dataset** and fill in the pop-up window.
+
+![register dataset of output vocabulary2](./media/text-classification-wiki/extract-n-gram-output-voc-register-dataset.png)
+
+After register dataset successfully in the training pipeline, you can create real-time inference pipeline. You need to adjust your inference pipeline manually to the following graph:
 
 ![inference pipeline](./media/text-classification-wiki/extract-n-gram-inference-pipeline.png)
 
